@@ -1,0 +1,87 @@
+.ErrorContainer {
+	color: red;
+	font-family: sans-serif;
+	p {
+		margin: 0;
+		font-size: 16px;
+	}
+}
+.InputTextContainer {
+	display: inline-block;
+	position: relative;
+	font-family: sans-serif;
+	.input-inner-wrapper {
+		position: relative;
+		&.isError {
+			margin-bottom: 4px;
+			input {
+				border: red solid 1px;
+				padding-right: 50px;
+			}
+		}
+	}
+	input {
+		height: 56px;
+		border-radius: 8px;
+		background-color: #5e5151;
+		border: none;
+		font-size: 16px;
+		padding: 18px 20px;
+		color: white;
+		&.isNarrowInHeight {
+			padding: 0 20px;
+			height: 30px;
+		}
+		&.isThinInput {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		&.pointer-events-none {
+			pointer-events: none;
+		}
+		&.icon-in-right {
+			padding-right: 60px;
+		}
+		&.searchIcon {
+			padding-left: 44px;
+		}
+		&::placeholder {
+			color: #e8b6b6;
+		}
+		&:active,
+		&:focus {
+			border-color: #39495f;
+			outline: none;
+		}
+		&.disabled {
+			color: #41474a;
+			&::placeholder {
+				color: #e8b6b6;
+			}
+		}
+	}
+	.copyLinkWhite {
+		background-color: #eeeeee;
+		color: #222222;
+	}
+}
+.FullWidth {
+	&-full {
+		width: 100%;
+	}
+}
+.copy-icon,
+.error-icon,
+.visibilityIcon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 24px;
+	cursor: pointer;
+}
+.search-icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 14px;
+}
