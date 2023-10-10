@@ -1,0 +1,26 @@
+.topSection {
+  max-width:100%;
+  overflow:hidden;
+}
+
+.girlsImg {
+  width:100%;
+}
+
+@media (max-width: 999.98px) {
+  .girlsImg {
+    width:124%;
+  }
+}
+
+@media (max-width: 600px) {
+  .girlsImg {
+    width:160%;
+  }
+}
+
+@media (max-width: 450px) {
+  .girlsImg {
+    width:249%;
+  }
+}
