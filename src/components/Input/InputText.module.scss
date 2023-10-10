@@ -28,23 +28,6 @@
 		font-size: 16px;
 		padding: 18px 20px;
 		color: white;
-		&.isNarrowInHeight {
-			padding: 0 20px;
-			height: 30px;
-		}
-		&.isThinInput {
-			padding-left: 10px;
-			padding-right: 10px;
-		}
-		&.pointer-events-none {
-			pointer-events: none;
-		}
-		&.icon-in-right {
-			padding-right: 60px;
-		}
-		&.searchIcon {
-			padding-left: 44px;
-		}
 		&::placeholder {
 			color: #e8b6b6;
 		}
@@ -60,28 +43,9 @@
 			}
 		}
 	}
-	.copyLinkWhite {
-		background-color: #eeeeee;
-		color: #222222;
-	}
 }
 .FullWidth {
 	&-full {
 		width: 100%;
 	}
-}
-.copy-icon,
-.error-icon,
-.visibilityIcon {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	right: 24px;
-	cursor: pointer;
-}
-.search-icon {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 14px;
 }
