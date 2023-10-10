@@ -14,6 +14,15 @@ function MainLanding() {
                             </div>
                             Happy couples
                         </div>
+                        <div className = {styles.headerWithDescrAndButton}>
+                            <h1>Dating Ukrainian Single Ladies</h1>
+                            <p>
+                                Join for free and start chatting
+                            </p>
+                            <p>
+                                More than a thousand single women are ready for a serious relationship and are waiting for your message
+                            </p>
+                        </div>
                     </div>
                     <div>
 
