@@ -4,7 +4,6 @@ import {useEffect, useRef} from "react"
 
 interface InputTextProps {
 	field?: any
-	required?: boolean | false
 	placeholder?: string
 	type?:
 		| "text"
@@ -20,19 +19,12 @@ interface InputTextProps {
 	error?: string
 	autoComplete?: boolean
 	spellCheck?: boolean
-	showOKIcon?: boolean
 	onClick?: any
 	onChange?: any
 	fullWidth?: "full"
 	value?: string
-	readonly?: boolean
 	onFocus?: any
-	isPointerEventsNone?: boolean
-	inputProhibited?: boolean
-	onChangeInput?: any
 	onBlur?: any
-	isNarrowInHeight?: boolean
-	isThinInput?: boolean
 }
 
 function InputText(props: InputTextProps) {

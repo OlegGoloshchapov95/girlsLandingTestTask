@@ -3,7 +3,7 @@
 	font-weight: 500;
 	display: inline-block;
 	width: 100%;
-	padding: 15px 30px;
+	padding: 12.5px 50px;
 	box-sizing: border-box;
 	font-size: 16px;
 	//width:auto;
@@ -16,26 +16,6 @@
 	&.not-full-width {
 		width: auto;
 	}
-	&.default-variant {
-		border: 2px solid transparent;
-		&:hover {
-			border: 2px solid #585ceb;
-		}
-	}
-	&.transparent-with-white-border {
-		background: transparent;
-		border: 1px solid #9898a1;
-		color: #fff;
-	}
-	&.white-text {
-		background: transparent;
-		border-color: transparent;
-		color: #fff;
-	}
-}
-
-.Disabled {
-	opacity: 0.3;
 }
 
 .Loader {

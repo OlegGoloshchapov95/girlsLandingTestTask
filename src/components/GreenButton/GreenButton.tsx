@@ -7,13 +7,9 @@ interface GreenButtonProps {
 	children: any
 	onClick?: (e: any) => void
 	className?: any
-	socialComponent?: any
-	variant?: "transparent-with-white-border" | "white-text"
 	isSubmit?: boolean
 	isNotFullWith?: boolean
-	disabled?: boolean
 	to?: string
-	isLoading?: boolean
 }
 
 function GreenButton(props: GreenButtonProps) {
@@ -21,10 +17,8 @@ function GreenButton(props: GreenButtonProps) {
 		children,
 		onClick,
 		className,
-		variant,
 		isSubmit,
 		isNotFullWith,
-		disabled,
 		to,
 	} = props
 
@@ -45,15 +39,11 @@ function GreenButton(props: GreenButtonProps) {
 		<button
 			className={cc(
 				styles.Button,
-				variant && styles[variant],
-				!variant && styles["default-variant"],
 				className && className,
 				isNotFullWith && styles["not-full-width"],
-				disabled && styles.Disabled
 			)}
 			onClick={handleOnClick}
 			{...(isSubmit && {type: "submit"})}
-			{...(disabled && {disabled: true})}
 		>
 			{children}
 		</button>

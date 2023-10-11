@@ -21,15 +21,15 @@
 		}
 	}
 	input {
-		height: 56px;
-		border-radius: 8px;
-		background-color: #5e5151;
-		border: none;
+		height: 44px;
+		background-color: #FDFDFD;
+		border-radius: 2px;
+		border: 1px #858585 solid;
+		padding: 10px 20px;
+		color: #858585;
 		font-size: 16px;
-		padding: 18px 20px;
-		color: white;
 		&::placeholder {
-			color: #e8b6b6;
+			color: #858585;
 		}
 		&:active,
 		&:focus {

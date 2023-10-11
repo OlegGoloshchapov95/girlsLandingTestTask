@@ -1,6 +1,7 @@
 import styles from "./MainLanding.module.scss";
 import image from "../../assets/images/bgGirls.png"
 import GreenButton from "../../components/GreenButton/GreenButton";
+import InputText from "../../components/Input/InputText";
 
 function MainLanding() {
     return (
@@ -23,7 +24,7 @@ function MainLanding() {
                             <p>
                                 More than a thousand single women are ready for a serious relationship and are waiting for your message
                             </p>
-                            <GreenButton>view profiles</GreenButton>
+                            <GreenButton isNotFullWith>view profiles</GreenButton>
                         </div>
                     </div>
                     <div>
