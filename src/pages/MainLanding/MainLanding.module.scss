@@ -49,6 +49,16 @@
   }
 }
 
+.authColumn {
+  flex: 1 auto;
+}
+
+.authColumnInner {
+  max-width:332px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
 @media (max-width: 999.98px) {
   .girlsImg {
     width:124%;

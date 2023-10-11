@@ -28,8 +28,10 @@ function MainLanding() {
                             <GreenButton isNotFullWith>view profiles</GreenButton>
                         </div>
                     </div>
-                    <div>
-                        <SignUpBlock/>
+                    <div className = {styles.authColumn}>
+                        <div className = {styles.authColumnInner}>
+                             <SignUpBlock/>
+                        </div>
                     </div>
                 </div>
             </section>
