@@ -2,6 +2,7 @@ import styles from "./MainLanding.module.scss";
 import image from "../../assets/images/bgGirls.png"
 import GreenButton from "../../components/GreenButton/GreenButton";
 import InputText from "../../components/Input/InputText";
+import SignUpBlock from "../../components/SignUpBlock/SignUpBlock";
 
 function MainLanding() {
     return (
@@ -28,7 +29,7 @@ function MainLanding() {
                         </div>
                     </div>
                     <div>
-
+                        <SignUpBlock/>
                     </div>
                 </div>
             </section>
