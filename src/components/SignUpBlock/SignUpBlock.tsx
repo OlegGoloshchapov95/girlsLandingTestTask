@@ -72,16 +72,18 @@ function SignUpBlock(props: SignUpBlockProps) {
                         defaultValue={""}
                     />
                 </div>
-                <Controller
-                    render={({field, fieldState}) => {
-                        return (
-                            <InputCheckboxHorizontal field = {field} title="hello, how are you?" value="new-checkbox-for-form"/>
-                        )
-                    }}
-                    name="checkbox"
-                    defaultValue = {false}
-                    control={control}
-                />
+                <div className={styles.inputItemBlock}>
+                    <Controller
+                        render={({field, fieldState}) => {
+                            return (
+                                <InputCheckboxHorizontal field = {field} value="new-checkbox-for-form">I agree to the <a href="#">Terms and Conditions</a> and I confirm that I am eighteen (18) years of age or older</InputCheckboxHorizontal>
+                            )
+                        }}
+                        name="checkbox"
+                        defaultValue = {false}
+                        control={control}
+                    />
+                </div>
                 <GreenButton>Create profile</GreenButton>
             </form>
         </div>

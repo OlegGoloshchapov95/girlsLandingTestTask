@@ -5,14 +5,14 @@ import {cc} from "../../utils/Classnames"
 interface InputCheckboxHorizontalProps {
     field?: any
     value?: string
-    title?: string | any
+    children?: string | any
     id?: string
     variant?: "signin"
     className?: string
 }
 
 function InputCheckboxHorizontal(props: InputCheckboxHorizontalProps) {
-    const {field, value, title, id, className} = props
+    const {field, value, id, className, children} = props
 
     return (
         <div
@@ -29,8 +29,8 @@ function InputCheckboxHorizontal(props: InputCheckboxHorizontalProps) {
                 id={value}
             />
             <label htmlFor={value}>
-                {!!title && (
-                    <span>{title}</span>
+                {!!children && (
+                    <span>{children}</span>
                 )}
             </label>
         </div>
