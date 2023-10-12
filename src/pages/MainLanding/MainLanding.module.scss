@@ -4,6 +4,14 @@
   position:relative;
 }
 
+.containerBlock {
+  max-width:1440px;
+  margin-right:auto;
+  margin-left:auto;
+  padding-left:24px;
+  padding-right:24px;
+}
+
 .girlsImg {
   width:100%;
 }
@@ -14,8 +22,10 @@
   height:100%;
   top:0;
   left:0;
-  display:flex;
-  justify-content: space-between;
+  .containerBlock {
+    display:flex;
+    justify-content: space-between;
+  }
 }
 
 .topSectionRightColumn {
@@ -81,6 +91,9 @@
 
 @media (max-width: 800px) {
   .authColumn {
+    display: none;
+  }
+  .happyCouples {
     display: none;
   }
 }
