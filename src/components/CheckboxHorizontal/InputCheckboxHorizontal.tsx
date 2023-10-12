@@ -8,37 +8,31 @@ interface InputCheckboxHorizontalProps {
     title?: string | any
     id?: string
     variant?: "signin"
+    className?: string
 }
 
 function InputCheckboxHorizontal(props: InputCheckboxHorizontalProps) {
-    const {field, value, title, id, variant} = props
+    const {field, value, title, id, className} = props
 
     return (
         <div
             className={cc([
                 styles.InputCheckBox,
-                variant !== undefined && styles["Variant-" + variant],
+                className && className
             ])}
             {...(id && {id: id})}
         >
-            <div className={styles.Switch}>
-                <div className={styles.Input}>
-                    <input
-                        {...(field && {...field})}
-                        type="checkbox"
-                        id={value}
-                    />
-                </div>
-
+            <input
+                className = {styles["custom-checkbox"]}
+                {...(field && {...field})}
+                type="checkbox"
+                id={value}
+            />
+            <label htmlFor={value}>
                 {!!title && (
-                    <div className={styles.Text}>
-                        <div className={cc([styles.Title])}>
-                            <p>{title}</p>
-                        </div>
-                    </div>
+                    <span>{title}</span>
                 )}
-            </div>
-            <label htmlFor={value} />
+            </label>
         </div>
     )
 }

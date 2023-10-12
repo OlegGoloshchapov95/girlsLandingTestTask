@@ -75,7 +75,7 @@ function SignUpBlock(props: SignUpBlockProps) {
                 <Controller
                     render={({field, fieldState}) => {
                         return (
-                            <InputCheckboxHorizontal field = {field} title="hello, how are you?"/>
+                            <InputCheckboxHorizontal field = {field} title="hello, how are you?" value="new-checkbox-for-form"/>
                         )
                     }}
                     name="checkbox"
