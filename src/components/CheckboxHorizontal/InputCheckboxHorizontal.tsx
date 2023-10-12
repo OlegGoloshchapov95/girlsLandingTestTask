@@ -1,28 +1,25 @@
 import styles from "./InputCheckboxHorizontal.module.scss"
+import React from "react"
 import {cc} from "../../utils/Classnames"
-import React, {useCallback} from "react"
 
 interface InputCheckboxHorizontalProps {
     field?: any
     value?: string
-    title?: string
+    title?: string | any
     id?: string
-    disabled?: boolean
+    variant?: "signin"
 }
 
 function InputCheckboxHorizontal(props: InputCheckboxHorizontalProps) {
-    const {field, value, title, id, disabled} = props
-
-    const active = useCallback(() => {
-        if (!field) return false
-        return field.value
-    }, [field])
+    const {field, value, title, id, variant} = props
 
     return (
         <div
-            className={cc([styles.InputCheckBoxHorizontal])}
+            className={cc([
+                styles.InputCheckBox,
+                variant !== undefined && styles["Variant-" + variant],
+            ])}
             {...(id && {id: id})}
-            style={{opacity: disabled ? 0.45 : 1}}
         >
             <div className={styles.Switch}>
                 <div className={styles.Input}>
@@ -30,8 +27,6 @@ function InputCheckboxHorizontal(props: InputCheckboxHorizontalProps) {
                         {...(field && {...field})}
                         type="checkbox"
                         id={value}
-                        {...(active() ? {checked: true} : {checked: false})}
-                        disabled={disabled ? disabled : false}
                     />
                 </div>
 
@@ -43,7 +38,7 @@ function InputCheckboxHorizontal(props: InputCheckboxHorizontalProps) {
                     </div>
                 )}
             </div>
-            <label htmlFor={value}/>
+            <label htmlFor={value} />
         </div>
     )
 }

@@ -79,6 +79,7 @@ function SignUpBlock(props: SignUpBlockProps) {
                         )
                     }}
                     name="checkbox"
+                    defaultValue = {false}
                     control={control}
                 />
                 <GreenButton>Create profile</GreenButton>
