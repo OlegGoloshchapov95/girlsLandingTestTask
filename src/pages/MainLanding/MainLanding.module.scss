@@ -1,6 +1,7 @@
 .topSection {
   max-width:100%;
   overflow:hidden;
+  position:relative;
 }
 
 .girlsImg {
@@ -24,7 +25,7 @@
 .happyCouples {
   color: #fff;
   font-size: 18px;
-  margin-bottom: 200px;
+  margin-bottom: 25%;
 }
 
 .happyCouplesQuantity {
@@ -51,7 +52,10 @@
 
 .authColumn {
   flex: 1 auto;
-  padding-top:30px;
+  padding-top:20px;
+  padding-bottom:40px;
+  display:flex;
+  align-items: flex-end;
 }
 
 .authColumnInner {
