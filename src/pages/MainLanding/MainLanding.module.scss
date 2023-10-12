@@ -5,7 +5,8 @@
 }
 
 .containerBlock {
-  max-width:1440px;
+  max-width:1740px;
+  width:100%;
   margin-right:auto;
   margin-left:auto;
   padding-left:24px;
@@ -22,6 +23,8 @@
   height:100%;
   top:0;
   left:0;
+  display:flex;
+  align-items:center;
   .containerBlock {
     display:flex;
     justify-content: space-between;
@@ -74,12 +77,15 @@
   margin-left:auto;
 }
 
+@media (max-width: 1200px) {
+  .happyCouples {
+    margin-bottom: 140px;
+  }
+}
+
 @media (max-width: 1100px) {
   .girlsImg {
     width:124%;
-  }
-  .happyCouples {
-    margin-bottom: 150px;
   }
 }
 
@@ -89,7 +95,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   .authColumn {
     display: none;
   }
@@ -98,7 +104,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .girlsImg {
     width:249%;
   }
