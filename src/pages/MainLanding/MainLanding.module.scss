@@ -48,6 +48,9 @@
 }
 
 .headerWithDescrAndButton {
+  .happyCouples {
+    display:none;
+  }
   h1{
     font-size: 48px;
     font-weight: 700;
@@ -95,6 +98,15 @@
   .girlsImg {
     width:160%;
   }
+  .headerWithDescrAndButton {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20.80px;
+    }
+  }
 }
 
 @media (max-width: 860px) {
@@ -103,6 +115,18 @@
   }
   .happyCouples {
     display: none;
+  }
+  .headerWithDescrAndButton {
+    .happyCouples {
+      display: block;
+      margin-top:-20px;
+      margin-bottom:20px;
+    }
+  }
+  .topSectionRightColumn {
+    display:flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
   }
 }
 
