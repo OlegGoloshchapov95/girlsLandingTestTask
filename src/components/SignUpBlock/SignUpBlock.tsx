@@ -84,7 +84,10 @@ function SignUpBlock(props: SignUpBlockProps) {
                         control={control}
                     />
                 </div>
-                <GreenButton>Create profile</GreenButton>
+                <div className = {styles.submitBtn}>
+                    <GreenButton>Create profile</GreenButton>
+                </div>
+                <p className = {styles.bottomText}>This site is protected by reCAPTCHA and the Google<br/> <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply</p>
             </form>
         </div>
     )
