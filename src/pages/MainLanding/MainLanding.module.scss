@@ -25,7 +25,7 @@
 .happyCouples {
   color: #fff;
   font-size: 18px;
-  margin-bottom: 25%;
+  margin-bottom: 200px;
 }
 
 .happyCouplesQuantity {
@@ -64,15 +64,24 @@
   margin-left:auto;
 }
 
-@media (max-width: 999.98px) {
+@media (max-width: 1100px) {
   .girlsImg {
     width:124%;
   }
+  .happyCouples {
+    margin-bottom: 150px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .girlsImg {
     width:160%;
+  }
+}
+
+@media (max-width: 800px) {
+  .authColumn {
+    display: none;
   }
 }
 
