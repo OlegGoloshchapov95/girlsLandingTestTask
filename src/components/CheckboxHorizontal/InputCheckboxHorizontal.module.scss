@@ -1,9 +1,17 @@
-.InputCheckBox {
+.InputCheckBoxHorizontal {
   margin: 0;
   padding: 0;
   position: relative;
-  //width: 100%;
-  width: fit-content;
+  width: 100%;
+
+  &:first-child {
+    border-radius: 4px 4px 0 0;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+    border-radius: 0 0 4px 4px;
+  }
 
   label {
     position: absolute;
@@ -14,6 +22,9 @@
   .Switch {
     width: 100%;
 
+    padding: 0 20px;
+    min-height: 65px;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,6 +34,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
     }
 
     .Text {
@@ -31,9 +43,9 @@
       .Title {
         p {
           font-size: 15px;
-          margin: 0 6px 0 12px;
+          margin: 0 12px;
           line-height: 1.33;
-          color: var(--typography-dark-gray);
+          color: #000;
         }
       }
     }
@@ -50,14 +62,14 @@
     width: 20px;
     height: 20px;
 
-    border: 1px solid var(--checkbox-border-color);
+    border: 1px solid #000;
     border-radius: 3px;
 
     transition: .2s;
 
     &:checked {
-      border: 1px solid var(--switch-input-background);
-      //background-image: url('../../../Icons/assets/tick.svg');
+      border: 1px solid #000;
+     // background-image: url('../../../Icons/assets/tick.svg');
       background-repeat: no-repeat;
       background-origin: border-box;
     }
@@ -79,18 +91,6 @@
 
     input[type='checkbox'] {
       border: 1px solid var(--checkbox-darkest-gray-color);
-    }
-  }
-}
-
-.rtl {
-  .Switch {
-    .Text {
-      .Title {
-        p {
-          margin: 0 12px 0 6px;
-        }
-      }
     }
   }
 }

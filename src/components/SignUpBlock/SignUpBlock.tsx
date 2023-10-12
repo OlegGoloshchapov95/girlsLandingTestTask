@@ -2,7 +2,7 @@ import styles from "./SignUpBlock.module.scss"
 import {cc} from "../../utils/Classnames"
 import InputText from "../Input/InputText";
 import GreenButton from "../GreenButton/GreenButton";
-import InputCheckBox from "../Checkbox/InputCheckBox";
+import InputCheckboxHorizontal from "../CheckboxHorizontal/InputCheckboxHorizontal";
 
 interface SignUpBlockProps {
 	className?: any
@@ -37,7 +37,7 @@ function SignUpBlock(props: SignUpBlockProps) {
 						placeholder={"password"}
 					/>
 				</div>
-				<InputCheckBox title = "hello, how are you?"/>
+				<InputCheckboxHorizontal title = "hello, how are you?"/>
 				<GreenButton>Create profile</GreenButton>
 			</form>
 		</div>
