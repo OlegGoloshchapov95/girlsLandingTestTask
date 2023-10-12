@@ -4,6 +4,18 @@
   position:relative;
 }
 
+.topSectionHeader {
+  display:none;
+}
+
+.headerLeft {
+  img {
+    height: 16px;
+    width: auto;
+    margin-right:3px;
+  }
+}
+
 .containerBlock {
   max-width:1740px;
   width:100%;
@@ -127,6 +139,13 @@
     display:flex;
     align-items: flex-end;
     padding-bottom: 20px;
+  }
+  .topSectionHeader {
+    height:44px;
+    padding-left:20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
   }
 }
 
