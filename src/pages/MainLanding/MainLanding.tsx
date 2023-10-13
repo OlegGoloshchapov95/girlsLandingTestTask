@@ -52,6 +52,11 @@ function MainLanding() {
                     </div>
                 </div>
             </section>
+            <section className={styles.statisticsSection}>
+                    <div className={styles.containerBlock}>
+                        <h2>Statistics section!</h2>
+                    </div>
+            </section>
         </div>
     )
 }
