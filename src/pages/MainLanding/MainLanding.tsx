@@ -4,6 +4,7 @@ import logoUi from "../../assets/images/logo-ui.svg"
 import logoDreams from "../../assets/images/logo-Dreams.svg"
 import GreenButton from "../../components/GreenButton/GreenButton";
 import SignUpBlock from "../../components/SignUpBlock/SignUpBlock";
+import StatisticsItem from "../../components/StatisticsItem/StatisticsItem";
 
 function MainLanding() {
     return (
@@ -55,6 +56,7 @@ function MainLanding() {
             <section className={styles.statisticsSection}>
                     <div className={styles.containerBlock}>
                         <h2>Statistics section!</h2>
+                        <StatisticsItem>Hello world!</StatisticsItem>
                     </div>
             </section>
         </div>
