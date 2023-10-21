@@ -1,19 +1,25 @@
 import styles from "./StatisticsItem.module.scss"
 
 interface StatisticsItemProps {
-	children: any
+	title: string
+	middleText: string
+	bottomText: string
 }
 
 function StatisticsItem(props: StatisticsItemProps) {
 	const {
-		children,
+		title,
+		middleText,
+		bottomText
 	} = props
 
 	return (
 		<div
 			className={styles.StatisticsItem}
 		>
-			{children}
+			<div className={styles.title}>{title}</div>
+			<div className={styles.middleText}>{middleText}</div>
+			<div className={styles.bottomText}>{bottomText}</div>
 		</div>
 	)
 }

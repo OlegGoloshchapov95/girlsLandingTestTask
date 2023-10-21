@@ -55,8 +55,7 @@ function MainLanding() {
             </section>
             <section className={styles.statisticsSection}>
                     <div className={styles.containerBlock}>
-                        <h2>Statistics section!</h2>
-                        <StatisticsItem>Hello world!</StatisticsItem>
+                        <StatisticsItem title={"17+"} middleText={"years"} bottomText={"in dating business!"}/>
                     </div>
             </section>
         </div>
