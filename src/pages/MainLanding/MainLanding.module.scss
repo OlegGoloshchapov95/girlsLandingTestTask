@@ -94,6 +94,15 @@
   margin-left:auto;
 }
 
+.StatisticsWrapper {
+  display:flex;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+.statisticsItem {
+  width:25%;
+}
+
 @media (max-width: 1200px) {
   .happyCouples {
     margin-bottom: 140px;

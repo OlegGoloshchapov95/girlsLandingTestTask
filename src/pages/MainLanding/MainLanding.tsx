@@ -55,7 +55,20 @@ function MainLanding() {
             </section>
             <section className={styles.statisticsSection}>
                     <div className={styles.containerBlock}>
-                        <StatisticsItem title={"17+"} middleText={"years"} bottomText={"in dating business!"}/>
+                        <div className={styles.StatisticsWrapper}>
+                            <div className={styles.statisticsItem}>
+                                <StatisticsItem title={"+250"} middleText={"new members"} bottomText={"every month"}/>
+                            </div>
+                            <div className={styles.statisticsItem}>
+                                <StatisticsItem title={"17+"} middleText={"years"} bottomText={"in dating business!"}/>
+                            </div>
+                            <div className={styles.statisticsItem}>
+                                <StatisticsItem title={"100%"} middleText={"verified members"} bottomText={"with our Anti-scam policy!"}/>
+                            </div>
+                            <div className={styles.statisticsItem}>
+                                <StatisticsItem title={"Free"} middleText={"letters and chat"} bottomText={"let ladies know more about you"}/>
+                            </div>
+                        </div>
                     </div>
             </section>
         </div>
