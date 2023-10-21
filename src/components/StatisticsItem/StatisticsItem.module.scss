@@ -22,3 +22,9 @@
 	font-size: 16px;
 	line-height: 26px;
 }
+
+@media (max-width: 1100px) {
+	.title {
+		font-size: 50px;
+	}
+}

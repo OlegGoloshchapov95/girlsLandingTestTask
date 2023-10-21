@@ -98,6 +98,7 @@
   display:flex;
   padding-top:30px;
   padding-bottom:30px;
+  flex-wrap: wrap;
 }
 .statisticsItem {
   width:25%;
@@ -116,6 +117,9 @@
 }
 
 @media (max-width: 900px) {
+  .statisticsItem {
+    width:50%;
+  }
   .girlsImg {
     width:160%;
   }
@@ -161,5 +165,8 @@
 @media (max-width: 550px) {
   .girlsImg {
     width:249%;
+  }
+  .statisticsItem  {
+    width:100%;
   }
 }
